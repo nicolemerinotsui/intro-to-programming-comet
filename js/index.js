@@ -11,7 +11,7 @@ let copyright=document.createElement("p")
 copyright.innerHTML= `Nicole Merino Tsui ${thisYear}`  
 footer.appendChild(copyright)
 
-const skills =['Program Management', 'International Development', 'Transitional Team Building'];
+const skills =['Program Management', 'International Development', 'Transitional Team Building', 'Monitoring and Evaluation'];
 let skillsSection=document.getElementById("skills")
 let skillsList=skillsSection.querySelector("ul")
 
