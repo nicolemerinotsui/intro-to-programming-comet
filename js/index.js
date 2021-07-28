@@ -21,15 +21,8 @@ skill.innerText=skills[i];
 skillsList.appendChild(skill)
 }
 
-
-
-// let messageForm=document.getElementById("form")
-//let messageForm =document.querySelector("leave_message")
-// messageForm.addEventListener('submit', (e) => {
-//     console.log('submit');
-// })
 const messageForm = document.querySelector("[name='leave_message']");
-//console.log(messageForm);
+
 messageForm.addEventListener('submit', (e) => {
     e.preventDefault();
 		const form = e.target;
@@ -62,7 +55,3 @@ messageForm.addEventListener('submit', (e) => {
 
         messageForm.reset();
     });
-
-
-
-
