@@ -9,7 +9,6 @@
 <section>
     <h2>About</h2>
     <p>Advocate, educator and soon to be software developer with a focus on JavaScript and HTML. 
-
        Pronouns: she/her
     </p>
 </section>
@@ -28,20 +27,59 @@
     <h2>Connect</h2>
 </section>
 
-To do List
-Hopes and dreams 
+<section>
+<h4><a href=“https:twitter.com/NicoleistheBest”
+    target=“_blank”>Twitter</a><ha4>
+    <h4>Linkedin <a href=https://www.linkedin.com/in/nicolemerinotsui/> My Linkedin</a></h4>
+    </section>
+    <br> 
+
+<section>
+    <h2>Leave a Message</h2>
+    <form name="leave_message">
+    
+        
+            <label for="name">Name:</label>
+            <input id="nameform" type=“text” name=“name" required />
+        
+    
+        
+             <label for=“email”>Email:</label>
+            <input id="emailname" type=“email” name=“email” required />
+        
+        
+        
+            <label for=“message”>Message:</label>
+
+            <textarea id="formMessage" name=“message” required></textarea>
+        
+        <button type=“submit”>Submit</button>
+    </form>
+    </section>
+    
+    <section id="messages">
+    <h2> Messages</h2>
+    <ul></ul>
+    </section>
+
+   <section>
+  
+   </section>
+
 <footer>
+
+    <form action=“index.html” methods=“post”>
+
+        <label for=“signup”>Sign up for  updates</label>
+        <input type=“email” id=“email” name=“" required />
+   
+        
+        <button class=“button” type=“submit”>Send</button>
+        
+        </form>
    
 </footer>
-<script src="/js/index.js"></script>
+<script src="/intro-to-programming-comet/js/index.js"></script>
 </body>
 </html>
 
-
-
-var button = document.getElementById('sayPhrase');
-var input = document.getElementById('phraseText');
-
-button.addEventListener('click', () => {
-  alert(input.value);
-});
