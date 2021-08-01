@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: light blue;
+  }
+  
+  p {
+    color: blue;
+    font-size: 25px;
+  }
+  header {
+    background-color: yellow;
+  }
+  
+  footer {
+    background-color: purple;
+  }
+  
+  a {
+    color: lightblue;
+    background-color: olive;
+    text-decoration: inherit;
+  }
