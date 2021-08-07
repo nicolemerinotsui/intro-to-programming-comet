@@ -4,22 +4,21 @@
     color: slateblue;
   }
 
-  
-
   html {
-      font-size: 24;
-      font-family: 'Hahmlet', serif;
+    font-size: 24;
+    font-family: 'Hahmlet', serif;
   }
 
   body {
     background: yellow;
-}
+  }
 
   p {
     color: blue;
     font-size: 20px;
     text-align: center;
   }
+  
   header {
     background-color: blueviolet;
     color:cornflowerblue;
@@ -36,13 +35,13 @@
   }
   
   a {
-    color: lightblue;
+    color: rgb(21, 14, 83);
     background-color: steelblue;
     text-decoration: inherit;
   }
 
   li {
-    color: lightblue;
+    color: rgb(67, 170, 41);
     background-color: steelblue;
     text-decoration: inherit;
     display:ruby-text-container;
@@ -55,14 +54,32 @@
     max-width: fit-content;
   }
   
-
   section {
-     padding: 20px 15px 30px 35px;
+     /*padding: 20px 15px 30px 35px; */
     text-align: center;
-    }
-    
     margin: 0 auto 30px;
+  }
+    
+   
 
     button{
-        background-color: tomato;
+      background-color: tomato;
+    }
+
+    .removeButton{
+      color: green;
+      background-color: violet;
+    }
+
+    @media print  {
+      section{
+      min-height: auto;
+      }
+    }
+
+    @media screen and (min-width: 730px) {
+      ul li {
+        display: inline-block;
+        width: 30%;
+      }
     }

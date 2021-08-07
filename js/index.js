@@ -13,6 +13,7 @@ footer.appendChild(copyright)
 
 const skills =['Program Management', 'Javascript', 'International Development', 'Transitional Team Building', 'Monitoring and Evaluation', 'Disaster Epidemiology'];
 let skillsSection=document.getElementById("skills")
+console.log('skillssection', skillsSection)
 let skillsList=skillsSection.querySelector("ul")
 
 for (let i = 0; i < skills.length; i++) {
@@ -21,14 +22,15 @@ skill.innerText=skills[i];
 skillsList.appendChild(skill)
 }
 
-const education =['University of California', 'Emory University'];
+const education=['University of California', 'Emory University'];
 let educationSection=document.getElementById("education")
 let educationList=educationSection.querySelector("ul")
 
 for (let i = 0; i < education.length; i++) {
-    let education= document.createElement("li");
-    skill.innerText=education[i];
-    educationList.appendChild(education)
+    console.log('running')
+    let educationHTMLitem= document.createElement("li");
+    educationHTMLitem.innerText=education[i];
+    educationList.appendChild(educationHTMLitem);
     }
 
 const messageForm = document.querySelector("[name='leave_message']");
@@ -53,6 +55,7 @@ messageForm.addEventListener('submit', (e) => {
         let removeButton = document.createElement('button');
         removeButton.innerHTML = 'remove';
         removeButton.type = 'button'; 
+        removeButton.className ='removeButton';
         
         removeButton.addEventListener('click', (e) => {
             let entry = e.target.parentNode;
@@ -65,3 +68,5 @@ messageForm.addEventListener('submit', (e) => {
 
         messageForm.reset();
     });
+
+    
