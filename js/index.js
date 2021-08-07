@@ -13,7 +13,6 @@ footer.appendChild(copyright)
 
 const skills =['Program Management', 'Javascript', 'International Development', 'Transitional Team Building', 'Monitoring and Evaluation', 'Disaster Epidemiology'];
 let skillsSection=document.getElementById("skills")
-console.log('skillssection', skillsSection)
 let skillsList=skillsSection.querySelector("ul")
 
 for (let i = 0; i < skills.length; i++) {
@@ -27,7 +26,6 @@ let educationSection=document.getElementById("education")
 let educationList=educationSection.querySelector("ul")
 
 for (let i = 0; i < education.length; i++) {
-    console.log('running')
     let educationHTMLitem= document.createElement("li");
     educationHTMLitem.innerText=education[i];
     educationList.appendChild(educationHTMLitem);
