@@ -54,16 +54,35 @@
     flex-direction: column;
      height: 300px; 
      justify-content: space-between; 
-
   }
 
-  #skills ul{display: flex;
+#experience li{
+  border: 2px solid green;
+}
+
+
+  #skills ul{
+    display: flex;
     list-style-type: none; 
     flex-direction: column;
      height: 300px; 
      justify-content: space-between; 
 
   }
+
+  .menu{
+    display:flex;
+    height: 20px;
+    justify-content: space-evenly;
+  }
+
+  .navbar{
+    display:flex;
+    justify-content: space-evenly;
+    border: solid;
+
+  }
+  
 
   img {
     width: 10%;
