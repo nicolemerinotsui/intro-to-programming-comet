@@ -49,6 +49,14 @@
     display:ruby-text-container;
   }
 
+  #experience ul{display: flex;
+    list-style-type: none; 
+    flex-direction: column;
+     height: 300px; 
+     justify-content: space-between; 
+
+  }
+
   #skills ul{display: flex;
     list-style-type: none; 
     flex-direction: column;

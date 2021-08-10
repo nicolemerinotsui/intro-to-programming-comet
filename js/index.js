@@ -11,6 +11,17 @@ let copyright=document.createElement("p")
 copyright.innerHTML= `Nicole Merino Tsui ${thisYear}`  
 footer.appendChild(copyright)
 
+// added experience lines 15-23, modeled from Skills. 
+const experiences =['Student Success Specialist-KIPP Bay Area    2017-2021', 'Graduate Researcher-Emory University   2015-2017', 'Grants Specialist-Tides Foundation  2013-2015', 'Educator-Oakland Schools      2007-2013',    'Data Associate-KPFA Radio  2004-2007'];
+let experienceSection=document.getElementById("experience")
+let experienceList=experienceSection.querySelector("ul")
+
+for (let i = 0; i < experiences.length; i++) {
+    let experience= document.createElement("li");
+    experience.innerText=experiences[i];
+    experienceList.appendChild(experience);
+    }
+
 const skills =['Program Management', 'Javascript', 'International Development', 'Transitional Team Building', 'Monitoring and Evaluation', 'Disaster Epidemiology'];
 let skillsSection=document.getElementById("skills")
 let skillsList=skillsSection.querySelector("ul")
