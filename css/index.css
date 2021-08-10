@@ -27,6 +27,8 @@
     text-align: left;
     height: 25vh;
   }
+
+
   
   footer {
     background-color: purple;
@@ -36,15 +38,23 @@
   
   a {
     color: rgb(21, 14, 83);
-    background-color: steelblue;
+    background-color: rgb(151, 180, 70);
     text-decoration: inherit;
   }
-
+/* use li for global and #blank for targeted */
   li {
     color: rgb(67, 170, 41);
-    background-color: steelblue;
+    background-color: white;
     text-decoration: inherit;
     display:ruby-text-container;
+  }
+
+  #skills ul{display: flex;
+    list-style-type: none; 
+    flex-direction: column;
+     height: 300px; 
+     justify-content: space-between; 
+
   }
 
   img {
@@ -68,6 +78,10 @@
     .removeButton{
       color: green;
       background-color: violet;
+    }
+
+    #skills{
+      color:aliceblue;
     }
 
     @media print  {
