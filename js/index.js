@@ -42,6 +42,8 @@ for (let i = 0; i < education.length; i++) {
     educationList.appendChild(educationHTMLitem);
     }
 
+//let connectSection=document.getElementById("connect") 
+
 const messageForm = document.querySelector("[name='leave_message']");
 
 messageForm.addEventListener('submit', (e) => {
