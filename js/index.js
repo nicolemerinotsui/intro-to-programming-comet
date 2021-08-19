@@ -11,6 +11,17 @@ let copyright=document.createElement("p")
 copyright.innerHTML= `Nicole Merino Tsui ${thisYear}`  
 footer.appendChild(copyright)
 
+// added experience lines 15-23, modeled from Skills. 
+const experiences =['Student Success Specialist-KIPP Bay Area    2017-2021', 'Graduate Researcher-Emory University   2015-2017', 'Grants Specialist-Tides Foundation  2013-2015', 'Educator-Oakland Schools      2007-2013',    'Data Associate-KPFA Radio  2004-2007'];
+let experienceSection=document.getElementById("experience")
+let experienceList=experienceSection.querySelector("ul")
+
+for (let i = 0; i < experiences.length; i++) {
+    let experience= document.createElement("li");
+    experience.innerText=experiences[i];
+    experienceList.appendChild(experience);
+    }
+
 const skills =['Program Management', 'Javascript', 'International Development', 'Transitional Team Building', 'Monitoring and Evaluation', 'Disaster Epidemiology'];
 let skillsSection=document.getElementById("skills")
 let skillsList=skillsSection.querySelector("ul")
@@ -21,15 +32,17 @@ skill.innerText=skills[i];
 skillsList.appendChild(skill)
 }
 
-const education =['University of California', 'Emory University'];
+const education=['University of California', 'Emory University'];
 let educationSection=document.getElementById("education")
 let educationList=educationSection.querySelector("ul")
 
 for (let i = 0; i < education.length; i++) {
-    let education= document.createElement("li");
-    skill.innerText=education[i];
-    educationList.appendChild(education)
+    let educationHTMLitem= document.createElement("li");
+    educationHTMLitem.innerText=education[i];
+    educationList.appendChild(educationHTMLitem);
     }
+
+//let connectSection=document.getElementById("connect") 
 
 const messageForm = document.querySelector("[name='leave_message']");
 
@@ -53,6 +66,7 @@ messageForm.addEventListener('submit', (e) => {
         let removeButton = document.createElement('button');
         removeButton.innerHTML = 'remove';
         removeButton.type = 'button'; 
+        removeButton.className ='removeButton';
         
         removeButton.addEventListener('click', (e) => {
             let entry = e.target.parentNode;
@@ -65,3 +79,5 @@ messageForm.addEventListener('submit', (e) => {
 
         messageForm.reset();
     });
+
+    
