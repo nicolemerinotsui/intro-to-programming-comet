@@ -65,3 +65,45 @@ messageForm.addEventListener('submit', (e) => {
 
         messageForm.reset();
     });
+
+    // 6.2 Proect Section using AJAX
+    const githubRequest = new XMLHttpRequest();
+    githubRequest.onreadystatechange = function() {
+        if(githubRequest.readyState === 4) {
+            const projects = JSON.parse(githubRequest.responseText);
+            console.log(githubRequest);
+        }
+        let projectSection = document.querySelector('#projects');
+    let projectList = projectSection.getElementsByTagName('ul')[0];
+    for (let i = 0; i < projects.length; i++){
+        let project = document.createElement('li');
+        project.innerText = projects[i];
+        projectList.appendChild(project);
+    }
+
+    }
+    githubRequest.open('GET', 'https://api.github.com/users/nicolemerinotsui/repos');
+    githubRequest.send();
+/*
+    //Server Response
+    githubRequest.addEventListener('load', (e) => {
+        e.preventDefault();
+        githubRequest.onreadystatechange = function() {
+            if(githubRequest.readyState === 4) {
+                const projects = JSON.parse(githubRequest.responseText);
+                console.log(githubRequest);
+            }
+        }
+    })
+   
+
+    //Display repositories in the list
+    let projectSection = document.querySelector('#projects');
+    let projectList = projectSection.getElementsByTagName('ul')[0];
+    for (let i = 0; i < projects.length; i++){
+        let project = document.createElement('li');
+        project.innerText = projects[i];
+        projectList.appendChild(project);
+    }
+
+    */
