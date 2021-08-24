@@ -41,11 +41,18 @@
   }
 /* use li for global and #blank for targeted */
   li {
-    color: rgb(67, 170, 41);
+    color: rgb(41, 54, 170);
     background-color: white;
     text-decoration: inherit;
     display:ruby-text-container;
      }
+
+     .anchor {
+      color: rgb(86, 41, 170);
+      background-color: white;
+      text-decoration: inherit;
+      display:ruby-text-container;
+       }
 
   #experience ul{
     display: flex;
@@ -92,6 +99,18 @@
 
 #education li{
   border: 2px solid green;
+}
+
+#projects ul{
+  display: flex;
+  list-style-type: none; 
+  flex-direction: column;
+  height: 100px; 
+  justify-content: space-evenly; 
+}
+
+#projects li{
+  border: 8px solid rgb(86, 52, 151);
 }
   
   .menu{

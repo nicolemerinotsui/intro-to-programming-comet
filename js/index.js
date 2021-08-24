@@ -80,44 +80,28 @@ messageForm.addEventListener('submit', (e) => {
         messageForm.reset();
     });
 
-    // 6.2 Proect Section using AJAX
-    const githubRequest = new XMLHttpRequest();
-    githubRequest.onreadystatechange = function() {
-        if(githubRequest.readyState === 4) {
-            const projects = JSON.parse(githubRequest.responseText);
-            console.log(githubRequest);
-        }
-        let projectSection = document.querySelector('#projects');
-    let projectList = projectSection.getElementsByTagName('ul')[0];
-    for (let i = 0; i < projects.length; i++){
-        let project = document.createElement('li');
-        project.innerText = projects[i];
-        projectList.appendChild(project);
-    }
-
-    }
-    githubRequest.open('GET', 'https://api.github.com/users/nicolemerinotsui/repos');
-    githubRequest.send();
-/*
-    //Server Response
-    githubRequest.addEventListener('load', (e) => {
-        e.preventDefault();
-        githubRequest.onreadystatechange = function() {
-            if(githubRequest.readyState === 4) {
-                const projects = JSON.parse(githubRequest.responseText);
-                console.log(githubRequest);
-            }
-        }
-    })
-   
-
-    //Display repositories in the list
+    // Add Project Section to web page
+const githubRequest = new XMLHttpRequest();
+githubRequest.onreadystatechange = function() {
+  if (githubRequest.readyState === 4) {
+    const projects = JSON.parse(this.response);
+    //console.log(projects);
     let projectSection = document.querySelector('#projects');
     let projectList = projectSection.getElementsByTagName('ul')[0];
-    for (let i = 0; i < projects.length; i++){
-        let project = document.createElement('li');
-        project.innerText = projects[i];
-        projectList.appendChild(project);
+    for (let i = 0; i < projects.length; i++) {
+      //changed from "li" to "a" and commented out 94, "li" has space but can't click
+      let project = document.createElement('a'); 
+      //let repoURL = document.createElement('a');
+      project.href = projects[i].html_url
+      project.target = "_blank";
+      project.style.color = "red";
+      
+      // list the objects but adding name will list by name
+      project.innerText = projects[i].name; 
+      projectList.appendChild(project);
     }
+  }
+}
+githubRequest.open('GET', 'https://api.github.com/users/nicolemerinotsui/repos');
+githubRequest.send();  
 
-    */
