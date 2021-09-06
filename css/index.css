@@ -1,4 +1,237 @@
+/*
+Reset & HTML
+Media Queries
+*/
+
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%; /* 10px */
+}
+
+@media only screen and (max-width: 75em) {
+	html {
+		font-size: 56.25%; /* 9px */
+	}
+}
+
+@media only screen and (max-width: 56.25em) {
+	html {
+		font-size: 50%; /* 8px */
+	}
+}
+
+@media only screen and (min-width: 112.5em) {
+	html {
+		font-size: 75%; /* 12px */
+	}
+}
+
+/*
+Page
+*/
+
+body {
+	box-sizing: border-box;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	line-height: 1.7;
+	word-spacing: 0.2rem;
+	letter-spacing: 0.1rem;
+	color: rgb(75, 75, 75);
+}
+
+/*
+Header
+*/
+
+.header {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-end;
+	align-items: center;
+	height: 95vh;
+	width: 100%;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+	background: linear-gradient(
+			to left bottom,
+			rgba(255, 255, 255, 0.05),
+			rgba(255, 255, 255, 0.3)
+		),
+		center / cover url(../img/golden-gate.jpg);
+	position: relative;
+}
+
+.header > * {
+	margin-bottom: 5rem;
+}
+
+h1 {
+	font-size: 4rem;
+	font-weight: 900;
+	letter-spacing: 0.5rem;
+}
+
+.profile-img {
+	width: 20%;
+	display: block;
+	border-radius: 50%;
+	box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+	transition: all 0.2s;
+}
+
+.profile-img:hover {
+	transform: scale(1.05) translateY(-0.5rem);
+	box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+}
+
+.nav-menu {
+	font-size: 2rem;
+	list-style: none;
+}
+
+.nav-menu li {
+	display: inline-block;
+}
+
+.nav-menu li:not(:last-child) {
+	margin-right: 2.5rem;
+}
+
+.nav-menu a {
+	color: inherit;
+	text-decoration: none;
+	font-weight: 700;
+}
+
 * {
+    margin: 0;
+    padding: 0;
+@@ -18,7 +133,7 @@
+    font-size: 20px;
+    text-align: center;
+  }
+
+  header {
+    background-color: blueviolet;
+    color:cornflowerblue;
+/@@ -33,13 +148,14 @@
+    color:crimson;
+    padding: 50px;
+  }
+
+a {
+    color: rgb(21, 14, 83);
+    background-color: rgb(151, 180, 70);
+    text-decoration: inherit;
+  }
+/* use li for global and #blank for targeted */
+
+li {
+  color: rgb(67, 170, 41);
+  background-color: white;
+
+  #experience ul{
+    display: flex;
+
+    list-style-type: none;
+    flex-direction: column;
+
+    height: 300px;
+    justify-content: space-between;
+  }
+  #experience li{
+    #skills ul{
+      display: flex;
+      list-style-type: none;
+    flex-direction: column;
+
+    height: 300px;
+    justify-content: space-between;
+  }
+  #skills li{
+  border: 2px solid green;
+  }
+  #experience ul{display: flex;
+
+    list-style-type: none;
+    flex-direction: column;
+
+    height: 300px;
+    justify-content: space-between;
+  }
+#experience li{
+
+  #education ul{
+    display: flex;
+
+    list-style-type: none;
+  flex-direction: column;
+
+  height: 100px;
+  justify-content: space-evenly;
+}
+#education li{
+  border: 2px solid green;
+}
+.menu{
+  display:flex;
+  height: 30px;
+
+  list-style-position: inside;
+}
+img {
+  width: 10%;
+  height: 10%;
+
+  padding: 15px;
+    max-width: fit-content;
+  }
+
+  */
+/*
+  section {
+     /*padding: 20px 15px 30px 35px; */
+
+     text-align: center;
+    margin: 0 auto 30px;
+  }
+
+  button{
+    background-color: tomato;
+    }
+
+    display: inline-block;
+    width: 30%;
+    }
+
+  }
+  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* * {
     margin: 0;
     padding: 0;
     color: slateblue;
@@ -40,7 +273,7 @@
     text-decoration: inherit;
   }
 /* use li for global and #blank for targeted */
-  li {
+  /* li {
     color: rgb(41, 54, 170);
     background-color: white;
     text-decoration: inherit;
@@ -136,7 +369,7 @@
   
   section {
      /*padding: 20px 15px 30px 35px; */
-    text-align: center;
+    /* text-align: center;
     margin: 0 auto 30px;
   }
     
@@ -164,4 +397,4 @@
       display: inline-block;
       width: 30%;
       }
-    }
+    }  */
