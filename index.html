@@ -1,5 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <meta name='author' content='Nicole Merino Tsui' />
+    <title>Nicole Merino Tsui's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@100&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
+    <div class="page-container">
+      <header class="header">
+        <img class="profile-img" src="img/profilepic.png" alt="profilepic" >
+        <h1>Nicole Merino Tsui</h1>
+        <nav class="navbar">
+          <ul class="nav-menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#connect">Connect</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class='main-content'>
+        <section id="about">
+          <h2>About</h2>
+          <p>Advocate, educator and Fullstack Engineer.
+              I worked in urban education. I've had the opportunity of living in Azerbaijan and South Korea. During graduate school, I conducted research in Cuba and Peru. While in Peru, I examined the impact of El Nino weather on communities, specifically on those impacted by extreme weather.
+          </p>
+          <br>
+          <p>Pronouns: she/her</p>
+        </section>
+
+        <section id ="experience">
+          <h2>Experience</h2>
+          <!-- Added class in line 51, but not seeing in live server -->
+          <ul></ul>
+        </section>
+
+        <section id="skills">
+          <h2>Skills</h2>
+          <ul></ul>
+        </section>
+
+        <section id="education">
+          <h2>Education</h2>
+          <ul></ul>
+        </section>
+
+        <section id="connect">
+          <h2>Connect</h2>
+          <a href=“https://twitter.com/NicoleistheBest”
+          target=“_blank”>Twitter</a>
+          <a href="mailto:nmerinotsui@gmail.com">Email me</a>  <br>
+          <a href="https://www.linkedin.com/in/nicolemerinotsui/"> My Linkedin</a>
+        </section>
+
+        <section>
+          <h2>Leave a Message</h2>
+          <form name="leave_message">
+            <label for="name">Name:</label>
+            <input id="nameform" type=“text” name=“name" required />
+
+            <label for=“email”>Email:</label>
+            <input id="emailname" type=“email” name=“email” required />
+
+            <label for=“message”>Message:</label>
+            <textarea id="formMessage" name=“message” required></textarea>
+
+            <button type=“submit”>Submit</button>
+        </form>
+      </section>
+
+      <section id="messages">
+        <h2>Messages</h2>
+        <ul></ul>
+      </section>
+    </main>
+
+    <footer>
+        <form action=“index.html” methods=“post”>
+          <label for=“signup”>Sign up for  updates</label>
+          <input type=“email” id=“email” name=“" required />
+
+          <button class=“button” type=“submit”>Send</button>
+        </form>
+
+    </footer>
+</div>
+<script src="js/index.js"></script>
+</body>
+</html>
+
+
+
+
+
+<!-- <html>
 
 
 <head>  
@@ -123,5 +226,6 @@
 </footer>
 <script src="../js/index.js"></script>
 </body>
-</html>
+</html> -->
+
 
